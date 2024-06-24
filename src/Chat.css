@@ -1,0 +1,78 @@
+.chat-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  height: 96vh;
+}
+
+.chat-window {
+  max-height: 80vh;
+  width: 700px;
+  /* border: 1px solid #ccc; */
+  overflow-y: auto;
+  margin: 10px auto;
+  padding: 4px;
+}
+
+.message {
+  background-color: #f1f0f0;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  width: 70%;
+  padding: 16px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.active-chat {
+  background-color: #495464;
+  color: white;
+}
+
+.chat-item {
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: 10px auto;
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+.user {
+  background-color: #888888;
+  color: white;
+}
